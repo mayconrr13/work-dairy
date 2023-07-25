@@ -7,10 +7,12 @@ import { Background, Container, LoginContent, LoginOptions, LoginOrText } from '
 import Link from '../../components/Link';
 import Logo from '../../assets/svgs/logo.svg';
 import InputPassword from '../../components/InputPassword';
+import { useNavigation } from '@react-navigation/native';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { navigate } = useNavigation();
 
   const handleLogin = () => {
     if (!email || !password) return;
@@ -40,7 +42,7 @@ const Login = () => {
         <Link
           label="Esqueceu sua senha?"
           apparence="primary"
-          onPress={() => console.log('Esqueceu sua senha?')}
+          onPress={() => navigate('RecoveryPassword' as never)}
           textAlign="right"
         />
 
@@ -58,7 +60,7 @@ const Login = () => {
         <Link
           label="Ainda não é cadastrado? Registre-se"
           apparence="primary"
-          onPress={() => console.log('Ainda não é cadastrado? Registre-se')}
+          onPress={() => navigate('SignUp' as never)}
         />
       </LoginContent>
     </Container>
