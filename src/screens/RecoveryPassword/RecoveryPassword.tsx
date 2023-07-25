@@ -31,7 +31,7 @@ const RecoveryPassword = () => {
           placeholder="Informe aqui seu email"
         />
 
-        <Button label="Login" apparence="primary" onPress={handlePasswordRecovery} />
+        <Button label="Recuperar senha" apparence="primary" onPress={handlePasswordRecovery} />
 
         <Link
           label="Voltar ao login"
