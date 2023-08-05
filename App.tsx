@@ -33,7 +33,7 @@ export default function App() {
         <KeyboardSafeZone>
           <StackRoutes />
         </KeyboardSafeZone>
-        <StatusBar style="auto" />
+        <StatusBar style="light" />
       </GlobalThemeProvider>
     </NavigationContainer>
   );
