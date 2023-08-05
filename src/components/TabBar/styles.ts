@@ -50,7 +50,7 @@ export const TabIcon = styled(Feather)<ExtendedTab>`
 
 export const AddButtonContainer = styled(View)`
   position: absolute;
-  top: -40px;
+  top: -32px;
   left: 50%;
   margin-left: -32px;
 `;
