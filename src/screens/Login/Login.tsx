@@ -18,6 +18,7 @@ const Login = () => {
     if (!email || !password) return;
 
     console.log({ email, password });
+    navigate('AuthSection' as never);
   };
 
   return (
