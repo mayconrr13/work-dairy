@@ -1,11 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SafeAreaView, Text } from 'react-native';
-import { StackRoutes } from './stack.routes';
+import TabBar from '../components/TabBar';
 const Tab = createBottomTabNavigator();
 
 export const TabRoutes = () => {
   return (
-    <Tab.Navigator initialRouteName="Dashboard">
+    <Tab.Navigator initialRouteName="Dashboard" tabBar={(props) => <TabBar {...props} />}>
       <Tab.Screen
         name="Dashboard"
         component={() => (
